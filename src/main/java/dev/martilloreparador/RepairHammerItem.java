@@ -54,7 +54,7 @@ public class RepairHammerItem extends Item {
                 : findOtherHandTarget(player, hammer);
 
         if (target == null) {
-            player.displayClientMessage(Component.translatable("message.martilloreparador26.no_target"), true);
+            player.sendOverlayMessage(Component.translatable("message.martilloreparador26.no_target"));
             return;
         }
         repairOnce(level, player, hammer, target);
@@ -69,7 +69,7 @@ public class RepairHammerItem extends Item {
         if (player.level().isClientSide()) return InteractionResult.SUCCESS;
         ItemStack piece = findDamagedArmor(other);
         if (piece == null) {
-            player.displayClientMessage(Component.translatable("message.martilloreparador26.no_target"), true);
+            player.sendOverlayMessage(Component.translatable("message.martilloreparador26.no_target"));
             return InteractionResult.SUCCESS;
         }
         repairOnce(player.level(), player, hammer, piece);
@@ -96,11 +96,11 @@ public class RepairHammerItem extends Item {
         HammerConfig cfg = HammerConfig.INSTANCE;
         if (!target.isDamageableItem() || !target.isDamaged() || target == hammer) return;
         if (hammer.getDamageValue() >= hammer.getMaxDamage() - 1) {
-            owner.displayClientMessage(Component.translatable("message.martilloreparador26.hammer_worn"), true);
+            owner.sendOverlayMessage(Component.translatable("message.martilloreparador26.hammer_worn"));
             return;
         }
         if (!owner.hasInfiniteMaterials() && owner.totalExperience < cfg.xpPointsPerHit) {
-            owner.displayClientMessage(Component.translatable("message.martilloreparador26.no_xp"), true);
+            owner.sendOverlayMessage(Component.translatable("message.martilloreparador26.no_xp"));
             return;
         }
 
@@ -114,7 +114,7 @@ public class RepairHammerItem extends Item {
         }
         int percent = Math.round(100.0F * (target.getMaxDamage() - target.getDamageValue()) /
                 Math.max(1, target.getMaxDamage()));
-        owner.displayClientMessage(Component.translatable("message.martilloreparador26.progress", percent), true);
+        owner.sendOverlayMessage(Component.translatable("message.martilloreparador26.progress", percent));
     }
 
     @Override
