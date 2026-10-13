@@ -1,0 +1,10 @@
+{
+  "item.martilloreparador26.repair_hammer": "Repairing Hammer",
+  "message.martilloreparador26.no_target": "No damaged item found to repair",
+  "message.martilloreparador26.no_xp": "Not enough experience",
+  "message.martilloreparador26.hammer_worn": "Repair your hammer on an anvil first",
+  "message.martilloreparador26.progress": "Repaired: %s%%",
+  "tooltip.martilloreparador26.hold": "Hold right click: repair the item in the other hand.",
+  "tooltip.martilloreparador26.sneak": "Shift + right click: repair your armor.",
+  "tooltip.martilloreparador26.xp": "Consumes XP. Netherite repairs the hammer on an anvil."
+}

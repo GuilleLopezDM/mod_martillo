@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "martilloreparador26",
+  "version": "${version}",
+  "name": "Martillo Reparador 26.3 (independiente)",
+  "description": "Martillo que repara objetos gastados con experiencia. Implementación independiente inspirada en la mecánica de reparar usando XP.",
+  "authors": [
+    "Implementación independiente para uso personal"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.martilloreparador.RepairHammerMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

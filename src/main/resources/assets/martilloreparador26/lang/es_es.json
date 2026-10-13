@@ -1,0 +1,10 @@
+{
+  "item.martilloreparador26.repair_hammer": "Martillo Reparador",
+  "message.martilloreparador26.no_target": "No hay ningún objeto dañado para reparar",
+  "message.martilloreparador26.no_xp": "No tienes suficiente experiencia",
+  "message.martilloreparador26.hammer_worn": "Repara primero tu martillo en el yunque",
+  "message.martilloreparador26.progress": "Reparado: %s%%",
+  "tooltip.martilloreparador26.hold": "Mantén clic derecho: repara el objeto de la otra mano.",
+  "tooltip.martilloreparador26.sneak": "Shift + clic derecho: repara tu armadura.",
+  "tooltip.martilloreparador26.xp": "Consume experiencia. Netherita repara el martillo en yunque."
+}
