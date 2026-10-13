@@ -19,5 +19,11 @@
     "minecraft": "~26.3",
     "java": ">=25",
     "fabric-api": "*"
-  }
+  },
+  "mixins": [
+    {
+      "config": "martilloreparador26.client.mixins.json",
+      "environment": "client"
+    }
+  ]
 }

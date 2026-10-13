@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.martilloreparador.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "VerticalRepairAnimationMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
